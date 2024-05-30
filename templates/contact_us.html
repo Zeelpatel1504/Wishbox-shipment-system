@@ -1,0 +1,260 @@
+    <!DOCTYPE html>
+    <html lang="en-US">
+    {% load static %}
+
+    <!-- home-100:13-->
+
+    <head>
+        <title>Wishbox</title>
+        <meta name="robots" content="index follow">
+        <meta name="googlebot" content="index follow">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="keywords"
+            content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, modern, shipment, transport, transportation, truck, trucking">
+        <meta name="description" content="Transportation and Logistics Responsive HTML5 Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,500,600,700,400i,500%7CDancing+Script:700%7CDancing+Script:700%7CGreat+Vibes:400%7CPoppins:400%7CDosis:800%7CRaleway:400,700,800&amp;subset=latin-ext"
+            rel="stylesheet">
+        <!-- animate -->
+
+        <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+        <!-- owl Carousel assets -->
+        <link href="{% static 'assets/css/owl.carousel.css' %}" rel="stylesheet">
+        <link href="{% static 'assets/css/owl.theme.css' %}" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <!-- hover anmation -->
+        <link rel="stylesheet" href="{% static 'assets/css/hover-min.css' %}">
+        <!-- flag icon -->
+        <!-- <link rel="stylesheet" href="{% static 'assets/css/flag-icon.min.css' %}"> -->
+        <!-- main style -->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        <!-- elegant icon -->
+        <link rel="stylesheet" href="{% static 'assets/css/elegant_icon.css' %}">
+        <!-- fontawesome  -->
+        <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome/css/font-awesome.min.css' %}">
+        <!-- REVOLUTION STYLE SHEETS -->
+        <link rel="stylesheet" type="text/css"
+            href="{% static 'assets/rslider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/rslider/fonts/font-awesome/css/font-awesome.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/rslider/css/settings.css' %}">
+    </head>
+
+    <body>
+
+
+        <div class="container mx-auto my-3">
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            
+                            <form action="{% url 'contactUs' %}" method="POST">
+                                {% csrf_token %}
+                                <div class="row g-3">
+                                    <div class="mb-3 col-md-6">
+
+                                <div class="row g-3">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" for="fname">
+                                            First Name :
+                                        </label>
+                                        <input type="text" id="fname" class="form-control" name="fname" required />
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" for="lname">
+                                            Last Name :
+                                        </label>
+                                        <input type="text" id="lname" class="form-control" name="lname" required />
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" for="email">
+                                            Email ID :
+                                        </label>
+                                        <input type="email" id="email" class="form-control" name="email" required />
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" for="contact">
+                                            Contact No :
+                                        </label>
+                                        <input type="number" id="contact" class="form-control" name="contact" required />
+                                    </div>
+                                    <div class="mb-3 col-md-12 form-floating">
+                                        <label class="form-label" for="requirement">
+                                            Type of Requirement:
+                                        </label>
+                                        <input type="text" name="requirement" class="form-control" id="requirement"
+                                            required></input>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit">Contact Us</button>
+                                </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <!-- <div class="card-body">
+                            <h3 class="fw-ligh">Customer Details</h3>
+                            <hr>
+
+                            <div class="row g-3">
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label" for="fname">
+                                        First Name :
+                                    </label>
+                                    <input type="text" id="fname" class="form-control" name="f_name" />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label" for="lname">
+                                        Last Name :
+                                    </label>
+                                    <input type="text" id="lname" class="form-control" name="l_name" />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label" for="email">
+                                        Email ID :
+                                    </label>
+                                    <input type="email" id="mile" class="form-control" name="email" />
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label class="form-label" for="contact">
+                                        Contact No :
+                                    </label>
+                                    <input type="number" id="mile" class="form-control" name="contact" />
+                                </div>
+                                <div class="mb-3 col-md-12 form-floating">
+                                    <label class="form-label" for="address">
+                                        Address :
+                                    </label>
+                                    <textarea name="address" class="form-control" id="address" cols="30"></textarea>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="layout-dark">
+            <div class="container padding-tb-100px">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-us sm-mb-45px">
+                            <div class="logo-footer margin-bottom-35px">
+                                <a href="#">
+                                    <h1 style="color:White;"><b>Wishbox</b></h1>
+                                </a>
+                            </div>
+                            <div class="text margin-bottom-35px">
+                                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="nile-widget widget_nav_menu sm-mb-45px">
+                            <h2 class="title">Our Services</h2>
+                            <ul class="footer-menu">
+                                <li><a href="#">Cargo Transportation </a></li>
+                                <li><a href="#">Air Freight </a></li>
+                                <li><a href="#">Ocean Freight </a></li>
+                                <li><a href="#">Packaging & Storage </a></li>
+                                <li><a href="#">Air Freight </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="nile-widget widget_nav_menu sm-mb-45px">
+                            <h2 class="title">Site Pages</h2>
+                            <ul class="footer-menu">
+                                <li><a href="#">Cargo Transportation </a></li>
+                                <li><a href="#">Air Freight </a></li>
+                                <li><a href="#">Ocean Freight </a></li>
+                                <li><a href="#">Packaging & Storage </a></li>
+                                <li><a href="#">Air Freight </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="nile-widget">
+                            <div class="margin-bottom-60px">
+                                <h2 class="title">Location</h2>
+                                <div class="contact-info opacity-9">
+                                    <div class="icon margin-top-5px"><span class="icon_pin_alt"></span></div>
+                                    <div class="text">
+                                        <span class="title-in">Location :</span> <br>
+                                        <span class="font-weight-500 text-uppercase">IN - Gujarat</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call_center">
+                                <h2 class="title">Call Center</h2>
+                                <div class="contact-info opacity-9">
+                                    <div class="icon  margin-top-5px"><span class="icon_phone"></span></div>
+                                    <div class="text">
+                                        <span class="title-in">Call Us :</span><br>
+                                        <span class="font-weight-500 text-uppercase">76239 36402</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copy-right">
+                <div class="container padding-tb-50px">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="copy-right-text text-lg-left text-center sm-mb-15px"><a target="_blank"
+                                    href="#">Wishbox</a> </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--  Social -->
+                            <ul class="social-media list-inline text-lg-right text-center margin-0px text-white">
+                                <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a class="youtube" href="#"><i class="fa fa-youtube-play"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a class="linkedin" href="#"><i class="fa fa-linkedin"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-google-plus"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-rss"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                            <!-- // Social -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="{% static 'assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    </body>
+
+
+    <!-- home-100:30-->
+
+    </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% load static %}
+
+<!-- home-100:13-->
+
+<head>
+    <title>Wishbox</title>
+    <meta name="robots" content="index follow">
+    <meta name="googlebot" content="index follow">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="keywords"
+        content="cargo, clean, contractor, corporate, freight, industry, localization, logistics, modern, shipment, transport, transportation, truck, trucking">
+    <meta name="description" content="Transportation and Logistics Responsive HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800%7CPoppins:300i,300,400,500,600,700,400i,500%7CDancing+Script:700%7CDancing+Script:700%7CGreat+Vibes:400%7CPoppins:400%7CDosis:800%7CRaleway:400,700,800&amp;subset=latin-ext"
+        rel="stylesheet">
+    <!-- animate -->
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+    <!-- owl Carousel assets -->
+    <link href="{% static 'assets/css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/owl.theme.css' %}" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- hover anmation -->
+    <link rel="stylesheet" href="{% static 'assets/css/hover-min.css' %}">
+    <!-- flag icon -->
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/flag-icon.min.css' %}"> -->
+    <!-- main style -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- elegant icon -->
+    <link rel="stylesheet" href="{% static 'assets/css/elegant_icon.css' %}">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome/css/font-awesome.min.css' %}">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'assets/rslider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/rslider/fonts/font-awesome/css/font-awesome.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/rslider/css/settings.css' %}">
+</head>
+
+<body>
+
+
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong>Message :</strong> {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+
+
+    <div class="container mx-auto my-5 w-50">
+        <div class="card">
+            <div class="card-header">
+                <h2>Register</h2>
+            </div>
+            <div class="card-body">
+                <!-- <form method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit">Submit</button>
+                </form> -->
+
+                <form method="POST" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Enter Your Name :
+                            <input type="text" class="form-control" name="name">
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Enter Your Email :
+                            <input type="email" class="form-control" name="email">
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Enter Your Password :
+                            <input type="password" class="form-control" name="password">
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+
+   
+
+</body>
+
+
+<!-- home-100:30-->
+
+</html>
