@@ -33,7 +33,7 @@
 
   <ul>
     <li>**Clone the Repository:**
-      <pre><code>git clone https://github.com/your-username/wishbox-shipment-system.git</code></pre>
+      <pre><code>git clone https://github.com/Zeelpatel1504/Wishbox-shipment-system</code></pre>
     </li>
     <li>**Install Dependencies:**
       <pre><code>cd wishbox-shipment-system && npm install</code></pre>
