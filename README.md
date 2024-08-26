@@ -12,20 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-p {
-  line-height: 1.5;
-}
 
-ul, ol {
-  margin-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-}
-</style>
-</head>
-<body>
 
 <h1>Wishbox Shipment System</h1>
 
