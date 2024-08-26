@@ -1,4 +1,4 @@
-Project Overview
+<b>Project Overview</b>
 Wishbox is a web-based platform designed to streamline the process of shipping luggage or personal belongings from one location to another. It offers a convenient and secure solution for individuals undergoing renovations, relocations, or other situations where temporary storage is required.
 
 Key Features
